@@ -1,0 +1,252 @@
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        /* CSS Variables */
+        :root {
+            --navbar-height: 59px;
+        }
+
+        /* Navigation Bar */
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 97%;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            opacity: 0.4;
+            z-index: -1;
+        }
+
+        /*Navigation Bar: Logo and image */
+        #logo {
+            margin: 18px 28px;
+        }
+
+        #logo img {
+            height: 65px;
+            margin: -16px -8px;
+            background: none;
+        }
+
+        /*Navigation Bar: List Styling */
+
+        #navbar ul {
+            font-family: 'Baloo 2', cursive;
+            display: flex;
+        }
+
+        #navbar ul li {
+            color: white;
+            list-style: none;
+            font-size: 1.2rem;
+        }
+
+        #navbar ul li a {
+
+            /* display: block; */
+            padding: 0px 10px;
+            border-radius: 2px;
+            text-decoration: none;
+            color: white;
+        }
+
+        #navbar ul li a:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        /* Home Section   */
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 309px;
+            height: 490px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #home::before {
+            content: "";
+            background: url('img/lag.jpg') no-repeat center center/cover;
+            position: absolute;
+            height: 569px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            opacity: 0.82;
+            z-index: -1;
+        }
+
+        #home h3 {
+            color: #d927c3;
+            text-align: center;
+            font-family: 'Bree Serif', serif;
+        }
+
+        #home p {
+            color: #ff008d;
+            text-align: center;
+            font-size: 1.2rem;
+            font-family: 'Bree Serif', serif;
+        }
+
+        /* Services Section  */
+
+        .h-primary center {
+            justify-content: center;
+            align-items: center;
+        }
+
+        #services {
+
+            margin: 30px;
+            display: flex;
+
+        }
+
+        #services .box {
+            border: 2px solid brown;
+            padding: 30px;
+            margin: 17px 5px;
+            border-radius: 28px;
+            background-color: #e5e2e2;
+            margin-bottom: 20px;
+        }
+
+        #services .box img {
+            height: 126px;
+            margin: auto;
+            display: block;
+        }
+
+        #services .box p {
+            font-family: 'Bree Serif', serif;
+        }
+
+        /* #services {}
+
+        #services {} */
+
+        /* Client Section  */
+        #client-section {
+            /* height: 300px; */
+            position: relative;
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: url('img/8.jpg');
+            width: 100%;
+            height: 96%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .client-item {
+            padding: 30px;
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #clients img {
+            height: 83px;
+        }
+
+        /* contact section  */
+
+           #contact{
+               position: relative;
+           }
+
+           #contact::before{
+               content: "";
+               position: absolute;
+               width: 100%;
+               height: 100%;
+               z-index: -1;
+               opacity: 0.6;
+               background: url('img/9.jpg') no-repeat center center/cover;
+           }
+
+           #contact-box{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               padding-bottom: 32px;
+           }
+
+           #contact-box input,
+
+           #contact-box textarea{
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1.1rem;
+           }
+
+           #contact-box form{
+               width: 40%;
+           }
+
+           #contact-box label{
+               font-size: 1.3rem;
+               font-family: 'Bree Serif', serif;
+           }
+
+           footer{
+               background: black;
+               color: white;
+               padding: 7px 17px;
+               text-align: center;
+           }
+
+        /* Utility Classes */
+        .h-primary {
+            font-size: 2.2rem;
+            padding: 12px;
+            text-align: center;
+            font-family: 'Bree Serif', serif;
+        }
+
+        .h-secondary {
+            font-size: 1.4rem;
+            padding: 12px;
+            text-align: center;
+            font-family: 'Bree Serif', serif;
+        }
+
+        .btn {
+            padding: 5px 18px;
+            border: 2px solid grey;
+            background-color: #a963a7;
+            margin: 15px;
+            font-size: 0.90rem;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            color: rgb(167, 146, 27);
+            background-color: black;
+        }
